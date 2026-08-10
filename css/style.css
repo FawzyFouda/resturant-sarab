@@ -241,6 +241,7 @@ section {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   align-items: baseline;
+  height: 50px;
 }
 .btn-red:hover {
   transform: translateY(-3px);
