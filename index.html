@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="أكلة مصرية">
+      <meta name="description" content="أكلة مصرية - مطعم مصري يقدم الأكل المصري الأصيل والمشويات والحواوشي والكشري والحلويات">
+      <title>أكلة مصرية - مطعم مصري</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">      <!-- Bootstrap 5.3 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!-- AOS Animate on Scroll -->
+      <link href="css/aos.css" rel="stylesheet"/>
+      <!-- Swiper -->
+      <link href="css/swiper-bundle.min.css" rel="stylesheet"/>
+      <!-- all min css -->
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <!-- magnific CSS -->
+      <link rel="stylesheet" href="css/magnific-popup.css"/>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+ 
+      <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <div class="blogo">
+                  <div class="bico"><i class="fas fa-utensils"></i></div>
+                  <div>
+                     <div class="bname">Sar<span>ab</span></div>
+                     <div class="bsub">مطعم أكل مصري</div>
+                  </div>
+               </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#hero">الرئيسية</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#menu">المنيو</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#chefs">الشيفات</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#reservation">احجز ترابيزة</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testimonials">آراء العملاء</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-section">تواصل معنا</a></li>
+               </ul>
+               <div class="d-flex align-صنف-center gap-1">
+                  <!-- FIX 1: Search button -->
+                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+                  <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-bag ms-1"></i>اطلب الآن</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- ============================================================
+         FIX 1 � SEARCH OVERLAY POPUP
+         ============================================================ -->
+      <div id="searchOv">
+         <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+         <div class="sovbox">
+            <h4>نفسك في إيه النهارده؟</h4>
+            <div class="sovinput">
+               <input type="text" id="searchInput" placeholder="ابحث عن كشري، حواوشي، مشويات..." autocomplete="off"/>
+               <button><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Categories inside search box -->
+            <div class="sovcats">
+               <div class="sovcat active" data-cat="all">
+                  <img src="img/menu/1.jpg" alt=""/>كل الأصناف
+               </div>
+               <div class="sovcat" data-cat="burgers">
+                  <img src="img/menu/1.jpg" alt=""/>سندوتشات
+               </div>
+               <div class="sovcat" data-cat="pizza">
+                  <img src="img/menu/2.jpg" alt=""/>بيتزا
+               </div>
+               <div class="sovcat" data-cat="chicken">
+                  <img src="img/menu/3.jpg" alt=""/>فراخ
+               </div>
+               <div class="sovcat" data-cat="wraps">
+                  <img src="img/menu/4.jpg" alt=""/>رولات وسندوتشات
+               </div>
+               <div class="sovcat" data-cat="pasta">
+                  <img src="img/menu/5.jpg" alt=""/>مكرونة
+               </div>
+               <div class="sovcat" data-cat="desserts">
+                  <img src="img/menu/6.jpg" alt=""/>حلويات
+               </div>
+            </div>
+            <div class="sovtrend">
+               <p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>الأكثر بحثًا</p>
+               <span class="ttag">حواوشي بالجبنة</span>
+               <span class="ttag">Nashville فراخ</span>
+               <span class="ttag">Truffle بيتزا</span>
+               <span class="ttag">أم علي</span>
+               <span class="ttag">بطاطس بالجبنة</span>
+               <span class="ttag">عصير مانجو</span>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         HERO
+         ============================================================ -->
+      <section id="hero">
+         <div class="hs hs1"></div>
+         <div class="hs hs2"></div>
+         <div class="hbgtxt">FOOD</div>
+         <div class="container">
+            <div class="row align-صنف-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-star"></i></div>
+                     <span>مطعم مصري بطعم أصيل وجودة تليق بيك</span>
+                  </div>
+                  <h1 class="htitle">أكل مصري <span class="hl">بطعم البيت</span><br/>لكل وقت</h1>
+                  <p class="hdesc">استمتع بأجمل الأكلات المصرية المحضّرة بمكونات طازجة وطعم أصيل. من الكشري والحواوشي إلى المشويات والمحاشي، كل لقمة ليها حكاية.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="btn-red"><i class="fas fa-utensils"></i>Explore المنيو</a>
+                     <!-- FIX 2: Magnific popup video trigger -->
+					 <a href="https://www.youtube.com/watch?v=RXv_uIN6e-Y" class="magnific_popup btn-play popup-youtube">
+						<div class="pico"><i class="fas fa-play"></i></div>
+						<span>شوف حكايتنا</span>
+					 </a>
+                  </div>
+                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hstat"><span class="snum">5000<em>+</em></span><small>عميل سعيد</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">45<em>+</em></span><small>المنيو Items</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">8<em>+</em></span><small>Expert الشيفات</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">8<em>سنين</em></span><small>سنين خبرة</small></div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hcircle">
+                        <img src="img/banner-img.jpg" alt="Burger"/>
+                     </div>
+                     <div class="fcard fc1">
+                        <div class="fcoi r"><i class="fas fa-fire"></i></div>
+                        <div><span class="fcnum">عرض ساخن</span><span class="fcsm">خصم 30% اليوم</span></div>
+                     </div>
+                     <div class="fcard fc2">
+                        <div class="fcoi y"><i class="fas fa-star"></i></div>
+                        <div><span class="fcnum">4.9/5</span><span class="fcsm">2k+ reviews</span></div>
+                     </div>
+                     <div class="fcard fc3">
+                        <div class="fcoi g"><i class="fas fa-clock"></i></div>
+                        <div><span class="fcnum">20 min</span><span class="fcsm">توصيل سريع</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MARQUEE -->
+      <div class="mqsec">
+         <div class="mqtrack">
+            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried فراخ</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet سندوتشات</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Artisan بيتزاs</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Fresh رولات وسندوتشات &amp; Rolls</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>بطاطس بالجبنة</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>ميلك شيك وعصائر</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>سندوتشات مشوية</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried فراخ</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet سندوتشات</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Artisan بيتزاs</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Fresh رولات وسندوتشات &amp; Rolls</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>بطاطس بالجبنة</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>ميلك شيك وعصائر</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>سندوتشات مشوية</div>
+         </div>
+      </div>
+      <!-- CATEGORY -->
+      <section id="category">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">إيه اللي بنقدمه؟</span>
+               <h2 class="stitle">اختار <span>صنفك المفضل</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">من الأكلات المصرية الأصيلة للمشويات والسندوتشات والحلويات، هتلاقي كل اللي بتحبه في منيو واحد.</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                  <div class="catcard active" data-filter="all">
+                     <img class="catimg" src="img/category/1.jpg" alt=""/>
+                     <div class="catnm">كل الأصناف</div>
+                     <div class="catct">99 صنف</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+                  <div class="catcard" data-filter="burgers">
+                     <img class="catimg" src="img/category/2.jpg" alt=""/>
+                     <div class="catnm">سندوتشات</div>
+                     <div class="catct">24 صنف</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+                  <div class="catcard" data-filter="pizza">
+                     <img class="catimg" src="img/category/3.jpg" alt=""/>
+                     <div class="catnm">بيتزا</div>
+                     <div class="catct">18 صنف</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="chicken">
+                     <img class="catimg" src="img/category/4.jpg" alt=""/>
+                     <div class="catnm">Fried فراخ</div>
+                     <div class="catct">15 صنف</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+                  <div class="catcard" data-filter="wraps">
+                     <img class="catimg" src="img/category/5.jpg" alt=""/>
+                     <div class="catnm">رولات وسندوتشات</div>
+                     <div class="catct">12 صنف</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="catcard" data-filter="desserts">
+                     <img class="catimg" src="img/category/6.jpg" alt=""/>
+                     <div class="catnm">حلويات</div>
+                     <div class="catct">20 صنف</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+         <div class="container">
+            <div class="row align-صنف-center g-5">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="astack">
+                     <div class="aexp"><span class="anum">12+</span><small>Years of<br/>Excellence</small></div>
+                     <div class="amain"><img src="img/about1.jpg" alt="Restaurant"/></div>
+                     <div class="asm"><img src="img/about2.jpg" alt=""/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7" data-aos="fade-left">
+                  <span class="slbl">حكايتنا</span>
+                  <h2 class="stitle text-start">مستنيينك تزورنا<br/>وتجرب <span>طعم الأكل المصري الأصيل</span></h2>
+                  <div class="sline lft"></div>
+                  <p class="sdesc mb-4">Founded in 2012, أكلة مصرية began as a small corner joint with a big dream - to serve food that brings people together. Today we're proud to serve thousands of happy customers every week with the same passion that started it all.</p>
+                  <div class="mb-4">
+                     <div class="fti">
+                        <div class="ftico r"><i class="fas fa-leaf"></i></div>
+                        <div>
+                           <h6>مكونات طازة كل يوم</h6>
+                           <p>بنختار مكوناتنا بعناية كل يوم علشان نضمن الطعم والجودة في كل وجبة.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico y"><i class="fas fa-award"></i></div>
+                        <div>
+                           <h6>وصفات مصرية مميزة</h6>
+                           <p>وصفاتنا معمولة بإيد شيفات خبرة وبلمسة مصرية أصيلة ترجعك لطعم البيت.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-shipping-fast"></i></div>
+                        <div>
+                           <h6>توصيل سريع</h6>
+                           <p>اطلب أونلاين وهيوصلك أكلك سخن وطازة لحد باب البيت في أسرع وقت.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-book-open"></i>View Full المنيو</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ============================================================
+         MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+         ============================================================ -->
+      <section id="menu">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">إيه اللي بيتعمل؟</span>
+               <h2 class="stitle">Our Delicious <span>المنيو</span></h2>
+               <div class="sline"></div>
+            </div>
+            <!-- FIX 3 � filter buttons -->
+            <div class="text-center mb-4" data-aos="fade-up">
+               <button class="filtbtn active" data-f="all">الكل</button>
+               <button class="filtbtn" data-f="burgers">سندوتشات</button>
+               <button class="filtbtn" data-f="pizza">بيتزا</button>
+               <button class="filtbtn" data-f="chicken">فراخ</button>
+               <button class="filtbtn" data-f="wraps">رولات وسندوتشات</button>
+               <button class="filtbtn" data-f="desserts">حلويات</button>
+               <button class="filtbtn" data-f="pasta">مكرونة</button>
+            </div>
+            <div class="row g-4" id="mgrid">
+               <!-- CARD 1: سندوتشات -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="burgers" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/menu/1.jpg"
+                     data-title="Classic حواوشي بالجبنة"
+                     data-cat="سندوتشات"
+                     data-price="95 ج.م" data-old="120 ج.م"
+                     data-rating="4.9" data-reviews="128"
+                     data-cal="620" data-time="12"
+                     data-desc="رغيف حواوشي محشو باللحمة المتبلة، جبنة شيدر، فلفل وبصل، ومحمّر لحد ما يبقى مقرمش من بره وطري من جوه."
+                     data-tags="Spicy,Bestseller,Beef">
+                     <div class="mimg">
+                        <img src="img/menu/1.jpg" alt="حواوشي بالجبنة"/>
+                        <div class="mbdg hot"><i class="fas fa-star"></i> Hot</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">سندوتشات</div>
+                        <div class="mtit">Classic حواوشي بالجبنة</div>
+                        <div class="mdesc">Double smashed patty, cheddar, caramelized onions, pickles &amp; special sauce</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">95 ج.م <small>120 ج.م</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(128)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 2: بيتزا -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="pizza" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/2.jpg"
+                     data-title="بيتزا شرقي باللحمة"
+                     data-cat="بيتزا"
+                     data-price="150 ج.م" data-old="180 ج.م"
+                     data-rating="4.8" data-reviews="95"
+                     data-cal="480" data-time="18"
+                     data-desc="بيتزا شرقي بعجينة طازة، صلصة طماطم، لحمة مفرومة، فلفل، بصل وجبنة موتزاريلا."
+                     data-tags="Vegetarian,New,Italian">
+                     <div class="mimg">
+                        <img src="img/menu/2.jpg" alt="بيتزا"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> جديد</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">بيتزا</div>
+                        <div class="mtit">بيتزا شرقي باللحمة</div>
+                        <div class="mdesc">San Marzano tomatoes, buffalo mozzarella, basil &amp; truffle oil on sourdough</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">150 ج.م <small>180 ج.م</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(95)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 3: فراخ -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="chicken" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/3.jpg"
+                     data-title="Nashville Hot فراخ"
+                     data-cat="فراخ"
+                     data-price="110 ج.م" data-old="140 ج.م"
+                     data-rating="5.0" data-reviews="210"
+                     data-cal="710" data-time="15"
+                     data-desc="قطع فراخ متبلة ومشوية على الفحم، تقدم مع أرز وسلطة وعيش بلدي وصوص خاص."
+                     data-tags="Spicy,Bestseller,Crispy">
+                     <div class="mimg">
+                        <img src="img/menu/3.jpg" alt="فراخ"/>
+                        <div class="mbdg"><i class="fas fa-star"></i> Best Seller</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">فراخ</div>
+                        <div class="mtit">Nashville Hot فراخ</div>
+                        <div class="mdesc">Crispy fried chicken in fiery Nashville spice blend with honey drizzle</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">110 ج.م <small>140 ج.م</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(210)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 4: رولات وسندوتشات -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="wraps" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/menu/4.jpg"
+                     data-title="سندوتش شاورما فراخ"
+                     data-cat="رولات وسندوتشات"
+                     data-price="85 ج.م" data-old=""
+                     data-rating="4.5" data-reviews="74"
+                     data-cal="520" data-time="10"
+                     data-desc="سندوتش شاورما فراخ متبلة مع الثومية والخس والطماطم والمخلل داخل عيش طازة."
+                     data-tags="Grilled,Fresh,Mexican">
+                     <div class="mimg">
+                        <img src="img/menu/4.jpg" alt="Wrap"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">رولات وسندوتشات</div>
+                        <div class="mtit">سندوتش شاورما فراخ</div>
+                        <div class="mdesc">Grilled chicken, peppers, sour cream &amp; guacamole in a warm tortilla</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">85 ج.م</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(74)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 5: حلويات -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="desserts" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/5.jpg"
+                     data-title="Nutella أم علي"
+                     data-cat="حلويات"
+                     data-price="65 ج.م" data-old="80 ج.م"
+                     data-rating="4.9" data-reviews="56"
+                     data-cal="390" data-time="8"
+                     data-desc="أم علي ساخنة بالمكسرات والزبيب والقشطة، متقدمة طازة بطعم بيتي أصيل."
+                     data-tags="Sweet,New,Chocolate">
+                     <div class="mimg">
+                        <img src="img/menu/5.jpg" alt="أم علي"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> جديد</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">حلويات</div>
+                        <div class="mtit">Nutella أم علي</div>
+                        <div class="mdesc">Molten chocolate cake with Nutella center, vanilla ice cream &amp; caramel</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">65 ج.م <small>80 ج.م</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(56)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 6: مكرونة -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="pasta" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/6.jpg"
+                     data-title="Truffle Mushroom مكرونة"
+                     data-cat="مكرونة"
+                     data-price="140 ج.م" data-old=""
+                     data-rating="4.9" data-reviews="88"
+                     data-cal="560" data-time="20"
+                     data-desc="مكرونة بصوص وايت كريمي مع قطع فراخ مشوية، مشروم وتوابل خاصة."
+                     data-tags="Vegetarian,Chef's Pick,Italian">
+                     <div class="mimg">
+                        <img src="img/menu/6.jpg" alt="مكرونة"/>
+                        <div class="mbdg hot">Chef's Pick</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">مكرونة</div>
+                        <div class="mtit">Truffle Mushroom مكرونة</div>
+                        <div class="mdesc">Al dente tagliatelle, wild mushrooms, black truffle, parmesan &amp; thyme</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">140 ج.م</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(88)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end #mgrid -->
+            <div class="text-center mt-5"><a href="#" class="btn-red"><i class="fas fa-th-large"></i> المنيو</a></div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         FIX 4 � MENU DETAIL POPUP MODAL
+         ============================================================ -->
+      <div id="menuPop">
+         <div class="mpbox">
+            <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+            <div class="mpimg"><img id="mpImg" src="" alt=""/></div>
+            <div class="mpbody">
+               <div id="mpCat"></div>
+               <div id="mpTitle"></div>
+               <div id="mpStars"></div>
+               <div id="mpDesc"></div>
+               <div id="mpPrice"></div>
+               <div class="mpmeta" id="mpMeta"></div>
+               <div class="mpqty">
+                  <button class="mpqbtn" id="mpMinus">-</button>
+                  <span class="mpqnum" id="mpQnum">1</span>
+                  <button class="mpqbtn" id="mpPlus">+</button>
+                  <span style="font-size:.82rem;color:#aaa;margin-left:9px;">الكمية</span>
+               </div>
+               <div class="mptags" id="mpTags"></div>
+               <button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>أضف للطلب</button>
+            </div>
+         </div>
+      </div>
+      <!-- SPECIAL OFFER -->
+      <section id="special">
+         <div class="spbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="row align-صنف-center g-5">
+               <div class="col-lg-6" data-aos="fade-right">
+                  <div class="sptag"><i class="fas fa-bolt me-1"></i>عرض لفترة محدودة</div>
+                  <h2 class="sptitle">خصم 30%<br/>على وجبة<br/><span>الحواوشي</span> المميزة</h2>
+                  <p class="spdesc">متفوتش عرضنا الخاص! وجبة حواوشي بالجبنة مع بطاطس وصوص ومشروب بسعر مميز.</p>
+                  <div class="cdwrap">
+                     <div class="cditem"><span class="cdnum" id="cdH">08</span><span class="cdlbl">المواعيد</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdM">45</span><span class="cdlbl">Minutes</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdS">30</span><span class="cdlbl">Seconds</span></div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-shopping-cart"></i>اطلب العرض</a>
+               </div>
+               <div class="col-lg-6" data-aos="fade-left">
+                  <div class="spimgw">
+                     <div class="spglow"></div>
+                     <div class="sppbdg"><span class="old">180 ج.م</span><span class="np">$17.49</span></div>
+                     <img src="img/off-img.jpg" alt="Special Burger"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         GALLERY � FIX 7 (click opens detail popup)
+         ============================================================ -->
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">من أكلنا</span>
+               <h2 class="stitle">شوف <span>أكلنا المصري</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="ggrid" data-aos="fade-up">
+               <div class="gitem"
+                  data-gi="0"
+                  data-gimg="img/portfolio/work1.jpg"
+                  data-gtitle="Gourmet سندوتشات"
+                  data-gdesc="حواوشي لحمة بالجبنة متحضّر يوميًا بتتبيلة خاصة وطعم مصري أصيل.">
+                  <img src="img/portfolio/work1.jpg" alt="سندوتشات"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Gourmet سندوتشات</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="1"
+                  data-gimg="img/portfolio/work2.jpg"
+                  data-gtitle="Wood-Fired بيتزا"
+                  data-gdesc="بيتزا شرقي بعجينة طازة ومكونات غنية باللحمة والخضار والجبنة.">
+                  <img src="img/portfolio/work2.jpg" alt="بيتزا"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Wood-Fired بيتزا</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="2"
+                  data-gimg="img/portfolio/work3.jpg"
+                  data-gtitle="Crispy Fried فراخ"
+                  data-gdesc="Double-brined, hand-battered chicken fried to golden perfection using our 15-spice secret blend.">
+                  <img src="img/portfolio/work3.jpg" alt="فراخ"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Crispy Fried فراخ</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="3"
+                  data-gimg="img/portfolio/work4.jpg"
+                  data-gtitle="Sweet حلويات"
+                  data-gdesc="Handcrafted desserts - from molten lava cakes to artisan ice cream sundaes and seasonal pastries.">
+                  <img src="img/portfolio/work4.jpg" alt="حلويات"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Sweet حلويات</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="4"
+                  data-gimg="img/portfolio/work5.jpg"
+                  data-gtitle="Fresh رولات وسندوتشات &amp; Rolls"
+                  data-gdesc="Loaded fresh wraps packed with grilled proteins, crunchy vegetables and our house-made sauces.">
+                  <img src="img/portfolio/work5.jpg" alt="رولات وسندوتشات"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Fresh رولات وسندوتشات &amp; Rolls</span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FIX 7 � GALLERY POPUP -->
+      <div id="galPop">
+         <div class="gpbox">
+            <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+            <img id="gpImg" src="" alt=""/>
+            <div class="gpcap">
+               <h5 id="gpTitle"></h5>
+               <p id="gpDesc"></p>
+            </div>
+            <div class="gpnav">
+               <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+               <button id="gpNext">Next <i class="fas fa-chevron-left ms-1"></i></button>
+            </div>
+         </div>
+      </div>
+	  
+	  
+      <!-- ============================================================
+         HISTORY � FIX 8 (alternating left/right text)
+         ============================================================ -->
+      <section id="history">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">مشوارنا</span>
+               <h2 class="stitle">حكاية <span>المطعم</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">من بداية بسيطة لمطعم بيجمع العيلة والصحاب على الأكل المصري الأصيل، كل سنة كانت خطوة جديدة.</p>
+            </div>
+            <div class="timeline" data-aos="fade-up">
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2012</div>
+                     <h5>البداية</h5>
+                     <p>أكلة مصرية opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2012</div>
+                     <h5>البداية</h5>
+                     <p>أكلة مصرية opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2015</div>
+                     <h5>أول توسع</h5>
+                     <p>Expanding the vision - we introduced our signature tasting menu and hired our first Michelin-trained chef, elevating our craft to remarkable new heights.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2015</div>
+                     <h5>أول توسع</h5>
+                     <p>Expanding the vision - we introduced our signature tasting menu and hired our first Michelin-trained chef, elevating our craft to remarkable new heights.</p>
+                  </div>
+               </div>
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2019</div>
+                     <h5>تطوير المنيو</h5>
+                     <p>Launched our signature fast-food line, merging gourmet quality with speed and convenience. Within 6 months we won 3 prestigious culinary awards nationally.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2019</div>
+                     <h5>تطوير المنيو</h5>
+                     <p>Launched our signature fast-food line, merging gourmet quality with speed and convenience. Within 6 months we won 3 prestigious culinary awards nationally.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2026</div>
+                     <h5>وصولنا لعملاء أكتر</h5>
+                     <p>Now operating in 8 cities across the US with an online delivery platform handling 10,000+ orders weekly - and growing every single day.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2026</div>
+                     <h5>وصولنا لعملاء أكتر</h5>
+                     <p>Now operating in 8 cities across the US with an online delivery platform handling 10,000+ orders weekly - and growing every single day.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- CHEFS -->
+      <section id="chefs">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">فريق المطبخ</span>
+               <h2 class="stitle">Meet Our Expert <span>الشيفات</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/1.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">الشيف أحمد السيد</div>
+                        <div class="chrole">الشيف الرئيسي</div>
+                        <div class="chexp">12 سنة خبرة</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/2.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">الشيف محمود حسن</div>
+                        <div class="chrole">شيف المشويات</div>
+                        <div class="chexp">8 سنين خبرة</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/3.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">الشيف محمد فتحي</div>
+                        <div class="chrole">شيف الحلويات</div>
+                        <div class="chexp">10 سنين خبرة</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/4.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">الشيف كريم علي</div>
+                        <div class="chrole">بيتزا Artisan</div>
+                        <div class="chexp">9 سنين خبرة</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- HOURS -->
+      <section id="hours">
+         <div class="hrsbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl" style="color:#a5d6bc;">مواعيد العمل</span>
+               <h2 class="stitle" style="color:#fff;">إحنا فاتحين <span style="color:var(--secondary);">علشانك</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 align-صنف-start">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="hrscard">
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>الاثنين - الثلاثاء</span>
+                        <div class="d-flex align-صنف-center gap-2">
+                           <div class="hdot off"></div>
+                           <span class="hrstime" style="color:#ff6b6b;">مغلق</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>الأربعاء - الخميس</span>
+                        <div class="d-flex align-صنف-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10:00 ص - 11:00 م</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>الجمعة</span>
+                        <div class="d-flex align-صنف-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10:00 ص - 12:00 م</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>السبت</span>
+                        <div class="d-flex align-صنف-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10:00 ص - 12:00 م</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>الأحد</span>
+                        <div class="d-flex align-صنف-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">12:00 م - 10:00 م</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3" data-aos="zoom-in">
+                  <div class="hrscta">
+                     <i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
+                     <h4>اطلب أونلاين</h4>
+                     <p>أكلك هيوصلك سخن وطازة</p>
+                     <a href="#menu" class="btnw">اطلب الآن ?</a>
+                  </div>
+               </div>
+               <div class="col-lg-4" data-aos="fade-left">
+                  <div class="hrscard">
+                     <h5 style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;"><i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>مكاننا</h5>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2" style="color:var(--secondary);"></i>العنوان</span><span class="hrstime" style="font-size:.8rem;">شارع الجمهورية، المنصورة، مصر</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2" style="color:var(--secondary);"></i>التليفون</span><span class="hrstime" style="font-size:.8rem;">0100 123 4567</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>البريد الإلكتروني</span><span class="hrstime" style="font-size:.8rem;">info@akla-masreya.com</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- TESTIMONIALS -->
+      <section id="testimonials">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">عملاؤنا بيقولوا إيه؟</span>
+               <h2 class="stitle">آراء <span>عملائنا</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="swiper tesSwiper" data-aos="fade-up">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Honestly the best burgers I've ever had. The smash burger is incredible - perfectly crispy edges, juicy inside, and those pickles! We come every الجمعة now.</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/1.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Monica Wilber</div>
+                              <div class="tesrl">عميل دائم</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Ordered delivery and the food arrived hot and fresh in 22 minutes. Portions are generous. أكلة مصرية has become my go-to comfort food spot without question.</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/2.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Cameron Fox</div>
+                              <div class="tesrl">صانع محتوى أكل</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">The truffle pasta blew my mind. I didn't expect that quality from a fast food place. Great ambiance, super friendly staff. Highly recommended!</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/3.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Priya Sharma</div>
+                              <div class="tesrl">من محبي الأكل</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Catered our office party of 50 people and everything was flawless. Fresh, delicious, on time and well presented. Nashville chicken was the absolute star!</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/4.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">David Park</div>
+                              <div class="tesrl">عميل شركات</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination mt-4" style="position:static;"></div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- RESERVATION FORM -->
+      <section id="reservation">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">احجز ترابيزة</span>
+               <h2 class="stitle">Make a <span>احجز ترابيزة</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Reserve your table for a memorable dining experience. We recommend booking 24 hours in advance for weekend evenings.</p>
+            </div>
+            <div class="row g-4 align-صنف-start">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div style="background:var(--dark);border-radius:18px;padding:36px;">
+                     <h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">تواصل معنا Info</h4>
+                     <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">مستعدين نساعدك في حجز ترابيزتك وتجهيز كل حاجة لزيارة حلوة.</p>
+                     <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-صنف-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-صنف:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-clock"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">مواعيد العمل</strong><span style="color:#fff;font-size:.87rem;">Wed - Sun, 9 AM - 11 PM</span></div>
+                        </div>
+                        <div class="d-flex align-صنف-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-صنف:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-phone-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">للحجز</strong><span style="color:#fff;font-size:.87rem;">0100 123 4567</span></div>
+                        </div>
+                        <div class="d-flex align-صنف-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-صنف:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-users"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">عزومات ومجموعات</strong><span style="color:#fff;font-size:.87rem;">منيو خاصة للمجموعات الكبيرة</span></div>
+                        </div>
+                        <div class="d-flex align-صنف-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-صنف:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Location</strong><span style="color:#fff;font-size:.87rem;">شارع الجمهورية، المنصورة، مصر</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">الاسم بالكامل *</label><input type="text" class="fctrl" placeholder="أحمد محمد"/></div>
+                        <div class="col-sm-6"><label class="flbl">التليفون Number *</label><input type="tel" class="fctrl" placeholder="0100 000 0000"/></div>
+                        <div class="col-sm-6"><label class="flbl">البريد الإلكتروني العنوان *</label><input type="email" class="fctrl" placeholder="example@email.com"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">عدد الأشخاص *</label>
+                           <select class="fctrl">
+                              <option>شخص واحد</option>
+                              <option>شخصان</option>
+                              <option>3 - 4 أشخاص</option>
+                              <option>5 - 6 أشخاص</option>
+                              <option>7 - 10 أشخاص</option>
+                              <option>أكثر من 10 أشخاص</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-6"><label class="flbl">Date *</label><input type="date" class="fctrl"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Time *</label>
+                           <select class="fctrl">
+                              <option>09:00 AM</option>
+                              <option>10:00 AM</option>
+                              <option>11:00 AM</option>
+                              <option>12:00 PM</option>
+                              <option>01:00 PM</option>
+                              <option>02:00 PM</option>
+                              <option>06:00 PM</option>
+                              <option>07:00 PM</option>
+                              <option>08:00 PM</option>
+                              <option>09:00 PM</option>
+                              <option>10:00 PM</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">طلبات خاصة</label><textarea class="fctrl" rows="3" placeholder="الكلergies, dietary needs, special occasions..."></textarea></div>
+                        <div class="col-12"><button class="btn-red w-100 justify-content-center" id="resBtn"><i class="fas fa-calendar-check"></i>Confirm احجز ترابيزة</button></div>
+                     </div>
+                     <div class="sucmsg" id="resOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>تم حجز الترابيزة! هنتواصل معاك لتأكيد الحجز.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- BLOG -->
+      <section id="blog">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">أخبارنا</span>
+               <h2 class="stitle">آخر <span>أخبارنا</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/1.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">14</span><span class="bm">Mar</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">أكل وصحة</div>
+                        <div class="bltit"><a href="#">إزاي تخلي الأكل المصري صحي ولذيذ؟</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>أحمد المصري</span><span><i class="fas fa-comment"></i>24 Comments</span></div>
+                        <a href="#" class="blmore">اقرأ المزيد <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/2.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">28</span><span class="bm">Feb</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">أسرار الأكل</div>
+                        <div class="bltit"><a href="#">أسرار الطعم الحلو في الأكل المصري</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>سارة محمد</span><span><i class="fas fa-comment"></i>18 Comments</span></div>
+                        <a href="#" class="blmore">اقرأ المزيد <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/3.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">05</span><span class="bm">Jan</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">وصفات</div>
+                        <div class="bltit"><a href="#">Innovative Hot Chickpeas Flake Crackin' Recipe at الرئيسية</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>الشيف مصطفى</span><span><i class="fas fa-comment"></i>32 Comments</span></div>
+                        <a href="#" class="blmore">اقرأ المزيد <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- NEWSLETTER -->
+      <section id="newsletter">
+         <div class="nlbg"></div>
+         <div class="container">
+            <div class="nlw text-center" data-aos="zoom-in">
+               <span class="slbl" style="color:rgba(255,255,255,.7);">خليك دايمًا معانا</span>
+               <h2 class="mb-3" style="color:#fff;">اشترك وخد <span style="color:var(--secondary);">عروض حصرية</span></h2>
+               <p class="mb-4" style="color:rgba(255,255,255,.78);">Get 15% off your first order plus early access to new menu صنف</p>
+               <div class="nl-form-wrap">
+                  <input class="nlinput" type="email" id="nlالبريد الإلكتروني" placeholder="اكتب بريدك الإلكتروني..."/>
+                  <button class="nlbtn" id="nlBtn"><i class="fas fa-paper-plane me-1"></i>اشترك</button>
+               </div>
+               <p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><i class="fas fa-lock me-1"></i>من غير رسائل مزعجة، وتقدر تلغي الاشتراك في أي وقت.</p>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- ============================================================
+         FIX 6 � CONTACT FORM
+         ============================================================ -->
+      <section id="contact-section">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">تواصل معانا</span>
+               <h2 class="stitle">تواصل معنا <span>Us</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">عندك سؤال أو اقتراح أو عايز تنظم عزومة؟ ابعتلنا وإحنا تحت أمرك.</p>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div class="ctdark">
+                     <h4>كلمنا</h4>
+                     <p class="ctsub">بنرد على رسائلك خلال ساعات العمل في أسرع وقت.</p>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="ctinfo"><strong>العنوان</strong><span>شارع الجمهورية، حي الجامعة،<br/>المنصورة، الدقهلية، مصر</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="ctinfo"><strong>التليفون</strong><span>0100 123 4567</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-envelope"></i></div>
+                        <div class="ctinfo"><strong>البريد الإلكتروني</strong><span>info@akla-masreya.com</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-clock"></i></div>
+                        <div class="ctinfo"><strong>Working المواعيد</strong><span>Wed - Sun: 9 AM - 11 PM</span></div>
+                     </div>
+                     <div class="ctsocrow">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">اسمك *</label><input type="text" class="fctrl" placeholder="أحمد محمد"/></div>
+                        <div class="col-sm-6"><label class="flbl">البريد الإلكتروني العنوان *</label><input type="email" class="fctrl" placeholder="example@email.com"/></div>
+                        <div class="col-sm-6"><label class="flbl">التليفون Number</label><input type="tel" class="fctrl" placeholder="0100 000 0000"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">الموضوع *</label>
+                           <select class="fctrl">
+                              <option>استفسار عام</option>
+                              <option>عزومات ومناسبات</option>
+                              <option>اقتراح أو شكوى</option>
+                              <option>شراكة</option>
+                              <option>إعلام وصحافة</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">الرسالة *</label><textarea class="fctrl" rows="5" placeholder="اكتب رسالتك هنا..."></textarea></div>
+                        <div class="col-12"><button class="btn-red" id="ctcBtn"><i class="fas fa-paper-plane"></i>إرسال الرسالة</button></div>
+                     </div>
+                     <div class="sucmsg" id="ctcOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>تم إرسال رسالتك! هنتواصل معاك قريب.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- FOOTER -->
+      <footer>
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-4">
+                  <div class="fnm">Sar<span>ab</span></div>
+                  <p class="fdesc">We bring the world's finest flavors together in a fast, friendly, and affordable experience. Every meal crafted with love.</p>
+                  <div class="fsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-tiktok"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">روابط سريعة</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#hero"><i class="fas fa-chevron-left"></i>الرئيسية</a></li>
+                     <li><a href="#about"><i class="fas fa-chevron-left"></i>من نحن Us</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-left"></i>Our المنيو</a></li>
+                     <li><a href="#reservation"><i class="fas fa-chevron-left"></i>احجز ترابيزة</a></li>
+                     <li><a href="#blog"><i class="fas fa-chevron-left"></i>Blog</a></li>
+                     <li><a href="#contact-section"><i class="fas fa-chevron-left"></i>تواصل معنا</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Our المنيو</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#menu"><i class="fas fa-chevron-left"></i>سندوتشات</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-left"></i>بيتزا</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-left"></i>Fried فراخ</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-left"></i>رولات وسندوتشات &amp; Rolls</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-left"></i>مكرونة</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-left"></i>حلويات</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <div class="ftit">تواصل معانا</div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+                     <div class="fciinfo"><strong>العنوان</strong>شارع الجمهورية، المنصورة، الدقهلية، مصر</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-phone-alt"></i></div>
+                     <div class="fciinfo"><strong>التليفون</strong>0100 123 4567</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-envelope"></i></div>
+                     <div class="fciinfo"><strong>البريد الإلكتروني</strong>info@akla-masreya.com</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-clock"></i></div>
+                     <div class="fciinfo"><strong>المواعيد</strong>الأربعاء - الأحد: 10 ص - 11 م</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fbot">
+            <div class="container">
+               <div class="d-flex justify-content-between align-صنف-center flex-wrap gap-2">
+                  <p>&copy 2026 <span>أكلة مصرية Restaurant</span>. الكل Rights Reserved by <a target="_blank" class="mx-0 fw-bold text-success" href="https://bestwpware.com/">Bestwpware</a>. Made with <span><i class="fas fa-heart"></i></span>  <br>Distributed by <a target="_blank" class="mx-0 fw-bold text-success" href="https://themewagon.com">ThemeWagon</a></p>
+                  <div><a href="#">سياسة الخصوصية</a><a href="#">الشروط</a><a href="#">ملفات الارتباط</a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Floating cart -->
+      <!-- <div class="cartfl"><i class="fas fa-shopping-cart"></i><span>My Cart</span><div class="ccount" id="cartCount">0</div></div> -->
+      <!-- Back to top -->
+      <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+    
+	<!-- jQuery -->
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <!-- Bootstrap 5 -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- AOS -->
+      <script src="js/aos.js"></script>
+      <!-- Swiper -->
+      <script src="js/swiper-bundle.min.js"></script>
+      <!-- CounterUp -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Main js -->
+      <script src="js/main.js"></script>
+   </body>
+</html>
